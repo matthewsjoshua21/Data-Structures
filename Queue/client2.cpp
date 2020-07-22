@@ -1,15 +1,3 @@
-//CS311 Yoshii
-//INSTRUCTION:
-//Look for ** to complete this program 
-//The string output should match my hw1queueDemo.out 
-
-//=========================================================
-//HW#: HW1P2 queue application (generate all strings)
-//Your name: Joshua Matthews
-//Complier:  g++ compliler empress
-//File type: client program client2.cpp
-//===========================================================
-
 using namespace std;
 #include <iostream>
 #include <stdlib.h>
@@ -19,7 +7,7 @@ using namespace std;
 //Purpose of the program: **
 //Algorithm: **
 int main()
-{ 
+{
   queue q; // ** "A", "B", "C" in the queue
   q.add("A");
   q.add("B");
@@ -30,11 +18,11 @@ int main()
       try
 	{
 	  string added; // ** create a temporary string variable to hold the previous value
-	  
-	    
-	  q.remove(added); // ** dequeue string to added to append to previous string 
+
+
+	  q.remove(added); // ** dequeue string to added to append to previous string
 	  cout << added << endl;
-	    
+
 	  if(!q.isFull()) //check for overflow
 	    {
 	      q.add(added + "A");
@@ -49,4 +37,3 @@ int main()
     }// end of loop
 
 }
-
